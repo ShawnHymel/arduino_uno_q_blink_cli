@@ -67,3 +67,11 @@ Now, we can use the Arduino App CLI to run and control apps. To start your progr
 ```sh
 arduino-app-cli app start ~/ArduinoApps/q_blink
 ```
+
+Note that Python code prints to logs rather than the console (as the app is run in a container on the UNO Q). To view the logs, run:
+
+```sh
+arduino-app-cli app logs ~/ArduinoApps/q_blink
+```
+
+Note that you can also view the logs in real time with `arduino-app-cli app logs ~/ArduinoApps/q_blink -f`.
