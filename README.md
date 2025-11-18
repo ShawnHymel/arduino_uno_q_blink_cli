@@ -73,5 +73,3 @@ Note that Python code prints to logs rather than the console (as the app is run 
 ```sh
 arduino-app-cli app logs ~/ArduinoApps/q_blink
 ```
-
-Note that you can also view the logs in real time with `arduino-app-cli app logs ~/ArduinoApps/q_blink -f`.
