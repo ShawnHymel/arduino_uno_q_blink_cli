@@ -74,6 +74,12 @@ Note that Python code prints to logs rather than the console (as the app is run 
 arduino-app-cli app logs ~/ArduinoApps/q_blink
 ```
 
+Your app runs in the background. You can stop it with:
+
+```sh
+arduino-app-cli app stop ~/ArduinoApps/q_blink
+```
+
 ## VS Code
 
 If you want to easily browse files on the UNO Q, I recommend installing [VS Code](https://code.visualstudio.com/) and the [Remote-SSH extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh). Click on the *Connection* icon in the bottom-left of VS Code and select **Connect to Host...**. Enter `arduino@<UNO_Q_IP_ADDRESS`, select **Linux** when asked about the server's OS, and enter your UNO Q password. You can then select *File > Open Folder...* to get to your *~/ArduinoApps* directory.
