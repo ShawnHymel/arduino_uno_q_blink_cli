@@ -13,3 +13,5 @@ def loop():
     led_state = not led_state
     Bridge.call("set_led_state", led_state)
     print("boop")
+    
+App.run(user_loop=loop)
