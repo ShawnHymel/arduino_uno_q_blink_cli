@@ -13,7 +13,8 @@ q_blink
 ├── README.md
 ├── app.yaml
 ├── python
-│   └── main.py
+│   ├── main.py
+│   └── requirements.txt
 └── sketch
     ├── sketch.ino
     └── sketch.yaml
@@ -23,6 +24,7 @@ Let's take a look at each of the files:
  * `README.md` is not required, but it's a good thing to have to describe your project and how to run it.
  * `app.yaml` is the App Lab app manifest for the Linux side. It ties the Python entry point (your `python/main.py`), any App Lab “Bricks”/services, and the linkage to the MCU sketch so the App Lab/CLI can build, deploy, and orchestrate both halves together on the UNO Q.
  * `python/main.py` is the Python sketch that runs on the MPU.
+ * `python/requirements.txt` lists the Python libraries required for the Python sketch. When you run your project, these libraries will automatically be downloaded and installed.
  * `sketch/sketch.ino` is the Arduino sketch that runs on the MCU.
  * `sketch/skecth.yaml` is the Arduino CLI sketch project file. It declares the board (FQBN), required core/platform versions, libraries, and (optionally) multiple build profiles for reproducible MCU builds.
 
